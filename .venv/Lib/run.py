@@ -4,7 +4,7 @@ from jproperties import Properties
 
 configs = Properties()
 
-with (open('config.properties', 'rb') as config_file):
+with (open('Obfuscator.properties', 'rb') as config_file):
     configs.load(config_file)
     # Diretório onde estão os arquivos .js
     directory = configs.get("path").data
